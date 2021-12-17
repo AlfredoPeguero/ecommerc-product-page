@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,QAAQ,CAAC;EACR,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AGND,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "../sass/style.scss",
+        "../sass/components/_variables.scss",
+        "../sass/components/_navbar.scss",
+        "../sass/components/_hero.scss",
+        "../sass/components/_quantity.scss",
+        "../sass/components/_details.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

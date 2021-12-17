@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import "./components/variables";
+
+@import "./components/navbar";
+@import "./components/hero";
+@import "./components/quantity";
+@import "./components/details";

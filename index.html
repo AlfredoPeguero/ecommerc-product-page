@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <nav class="navbar">
+          <button class="navbar__hamburger">
+            <img src="./images/icon-menu.svg" alt="menu" />
+          </button>
+
+          <div class="navbar__logo">
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+
+          <ul class="navbar__links">
+            <li class="links__item"><a href="#">Collections</a></li>
+            <li class="links__item"><a href="#">Men</a></li>
+            <li class="links__item"><a href="#">Women</a></li>
+            <li class="links__item"><a href="#">About</a></li>
+            <li class="links__item"><a href="#">Contact</a></li>
+          </ul>
+
+          <div class="navbar__cart">
+            <img src="./images/icon-cart.svg" alt="cart" />
+          </div>
+          <div class="navbar__logo">
+            <img src="./images/image-avatar.png" alt="avatar" />
+          </div>
+        </nav>
+
+        <section class="hero">
+          <div class="container__slider">
+            <ul>
+              <li class="slider_items">
+                <img src="./images/image-product-1.jpg" alt="product" />
+              </li>
+              <li class="slider_items">
+                <img src="./images/image-product-2.jpg" alt="product" />
+              </li>
+              <li class="slider_items">
+                <img src="./images/image-product-3.jpg" alt="product" />
+              </li>
+              <li class="slider_items">
+                <img src="./images/image-product-4.jpg" alt="product" />
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="details">
+          <div class="companyname">Sneaker Company</div>
+          <div class="details__title">Fall Limited Edition Sneakers</div>
+          <div class="details__description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </div>
+          <div class="details_price">
+            <span class="price">$125.00</span>
+            <span class="descount">50%</span>
+            <span class="original_price">$250.00</span>
+          </div>
+
+          <div class="addSection">
+            <div class="quantity">
+              <button class="minus">
+                <img src="./images/icon-minus.svg" alt="minus" />
+              </button>
+              <span> 0</span>
+              <button class="plus">
+                <img src="./images/icon-plus.svg" alt="plus" />
+              </button>
+            </div>
+            <button class="btn_add">Add to cart</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
