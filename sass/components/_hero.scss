@@ -1,3 +1,31 @@
 .hero {
-  display: none;
+  &__container {
+    position: relative;
+    &__btn-previus {
+      img {
+        position: absolute;
+        padding: 0.7rem;
+        border-radius: 50%;
+        background: $White;
+      }
+      border: none;
+      background: transparent;
+      transform: translate(40%, 450%);
+    }
+    &__btn-next {
+      img {
+        position: absolute;
+        padding: 0.7rem;
+        border-radius: 50%;
+        background: $White;
+      }
+      border: none;
+      background: transparent;
+      transform: translate(940%, -400%);
+    }
+    &__slider {
+      width: 100%;
+      height: 18.75rem;
+    }
+  }
 }

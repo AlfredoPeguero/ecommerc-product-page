@@ -12,9 +12,15 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | E-commerce product page</title>
 
-    <style>
+    <!-- <style>
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -22,7 +28,7 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-    </style>
+    </style> -->
   </head>
   <body>
     <main>
@@ -47,39 +53,31 @@
           <div class="navbar__cart">
             <img src="./images/icon-cart.svg" alt="cart" />
           </div>
-          <div class="navbar__logo">
+          <div class="navbar__avatar">
             <img src="./images/image-avatar.png" alt="avatar" />
           </div>
         </nav>
 
         <section class="hero">
-          <div class="container__slider">
-            <ul>
-              <li class="slider_items">
-                <img src="./images/image-product-1.jpg" alt="product" />
-              </li>
-              <li class="slider_items">
-                <img src="./images/image-product-2.jpg" alt="product" />
-              </li>
-              <li class="slider_items">
-                <img src="./images/image-product-3.jpg" alt="product" />
-              </li>
-              <li class="slider_items">
-                <img src="./images/image-product-4.jpg" alt="product" />
-              </li>
-            </ul>
+          <div class="hero__container">
+            <img
+              id="slider"
+              class="hero__container__slider"
+              src="./images/image-product-1.jpg"
+              alt=""
+            />
           </div>
         </section>
 
         <section class="details">
-          <div class="companyname">Sneaker Company</div>
+          <div class="details__companyname">Sneaker Company</div>
           <div class="details__title">Fall Limited Edition Sneakers</div>
           <div class="details__description">
             These low-profile sneakers are your perfect casual wear companion.
             Featuring a durable rubber outer sole, they’ll withstand everything
             the weather can offer.
           </div>
-          <div class="details_price">
+          <div class="details__price">
             <span class="price">$125.00</span>
             <span class="descount">50%</span>
             <span class="original_price">$250.00</span>
@@ -90,12 +88,15 @@
               <button class="minus">
                 <img src="./images/icon-minus.svg" alt="minus" />
               </button>
-              <span> 0</span>
+              <div class="count">0</div>
               <button class="plus">
                 <img src="./images/icon-plus.svg" alt="plus" />
               </button>
             </div>
-            <button class="btn_add">Add to cart</button>
+            <button class="btn_add">
+              <img src="./images/icon-whitecart.svg" alt="cart" />
+              Add to cart
+            </button>
           </div>
         </section>
       </div>

@@ -1,0 +1,18 @@
+.btn_add {
+  background: $Orange;
+  border: none;
+  padding: 0.8rem;
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 0.6rem;
+  color: $White;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  box-shadow: 0.3px 1.8px 3.9px $Pale_orange, 0.9px 6px 13px $Pale_orange,
+    4px 27px 58px $Pale_orange;
+}
+.btn_add img {
+  margin-right: 0.75rem;
+}

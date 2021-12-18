@@ -1,0 +1,45 @@
+.details {
+  padding: 1rem;
+
+  &__companyname {
+    font-weight: 700;
+    color: $Orange;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  &__title {
+    padding: 0.5rem 0;
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-top: 0.7rem;
+  }
+  &__description {
+    line-height: 1.5;
+    color: $Dark_grayish_blue;
+    font-size: 0.9375rem;
+    margin: 0.8rem 0;
+  }
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .price {
+      font-weight: 700;
+      color: $Black;
+      font-size: 2rem;
+    }
+    .descount {
+      background: $Pale_orange;
+      color: $Orange;
+      font-weight: 600;
+      margin-right: 6rem;
+    }
+    .original_price {
+      color: $Grayish_blue;
+      text-decoration: line-through;
+      font-weight: 700;
+    }
+  }
+}

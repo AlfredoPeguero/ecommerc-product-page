@@ -1,14 +1,14 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+// variables
 @import "./components/variables";
 
+// mixins
+@import "./components/mixin";
+
+//layout
+@import "./components/container";
+@import "./components/reset";
 @import "./components/navbar";
 @import "./components/hero";
 @import "./components/quantity";
 @import "./components/details";
+@import "./components/button";

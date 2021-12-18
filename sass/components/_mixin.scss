@@ -1,0 +1,6 @@
+@mixin flebox($contenido, $items, $wrap: nowrap) {
+  display: flex;
+  justify-content: contenido;
+  align-items: $items;
+  flex-wrap: nowrap;
+}

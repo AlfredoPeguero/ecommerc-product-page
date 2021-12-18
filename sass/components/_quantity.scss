@@ -1,0 +1,27 @@
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  .minus {
+    border: none;
+    padding: 0.8rem;
+    width: 20%;
+    background: $Light_grayish_blue;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .count {
+    background: $Light_grayish_blue;
+    width: 100%;
+    padding: 0.8rem;
+    text-align: center;
+  }
+  .plus {
+    border: none;
+    padding: 0.8rem;
+    width: 20%;
+    background: $Light_grayish_blue;
+    border-radius: 0 5px 5px 0;
+  }
+}
