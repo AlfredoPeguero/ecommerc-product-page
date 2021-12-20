@@ -1,5 +1,10 @@
 .container {
-  width: 375px;
+  max-width: 375px;
   margin: auto;
   font-family: "Kumbh Sans", sans-serif;
+}
+@media (min-width: 75rem) {
+  .container {
+    max-width: 75rem;
+  }
 }

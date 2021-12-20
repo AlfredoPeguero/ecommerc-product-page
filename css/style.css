@@ -1,9 +1,14 @@
 .container {
-  width: 375px;
+  max-width: 375px;
   margin: auto;
   font-family: "Kumbh Sans", sans-serif;
 }
 
+@media (min-width: 75rem) {
+  .container {
+    max-width: 75rem;
+  }
+}
 *,
 *::after,
 *::before {
@@ -38,6 +43,52 @@
   width: 40%;
 }
 
+@media (min-width: 75rem) {
+  .navbar {
+    padding-bottom: 1.25rem;
+  }
+  .navbar__hamburger {
+    display: none;
+  }
+  .navbar__logo {
+    cursor: pointer;
+  }
+  .navbar__links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin-left: 3.5rem;
+    font-size: 0.9rem;
+  }
+  .navbar__links a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: #68707d;
+    cursor: pointer;
+  }
+  .navbar__links a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #ff7d1a;
+    min-height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -2.5rem;
+  }
+  .navbar__links a:hover::after {
+    width: 100%;
+  }
+  .navbar__cart {
+    margin-left: 25rem;
+    cursor: pointer;
+  }
+  .navbar__avatar img {
+    cursor: pointer;
+  }
+}
 .hero__container {
   position: relative;
 }
