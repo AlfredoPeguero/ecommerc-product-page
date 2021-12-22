@@ -24,6 +24,9 @@
     width: 40%;
   }
 }
+.line {
+  border: 1px solid rgba(128, 128, 128, 0.11);
+}
 @media (min-width: 75rem) {
   .navbar {
     padding-bottom: 1.25rem;
@@ -38,7 +41,7 @@
       gap: 2rem;
       list-style: none;
       margin-left: 3.5rem;
-      font-size: 0.9rem;
+      font-size: 1rem;
 
       a {
         position: relative;
@@ -70,6 +73,10 @@
     }
     &__avatar img {
       cursor: pointer;
+    }
+    &__avatar img:hover {
+      border-radius: 50%;
+      outline: 2px solid $Orange;
     }
   }
 }

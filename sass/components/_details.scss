@@ -1,5 +1,6 @@
 .details {
   padding: 1rem;
+  // display: none;
 
   &__companyname {
     font-weight: 700;
@@ -19,6 +20,7 @@
     color: $Dark_grayish_blue;
     font-size: 0.9375rem;
     margin: 0.8rem 0;
+    font-weight: 400;
   }
   &__price {
     display: flex;
@@ -40,6 +42,29 @@
       color: $Grayish_blue;
       text-decoration: line-through;
       font-weight: 700;
+    }
+  }
+}
+@media (min-width: 75rem) {
+  .details {
+    width: 75%;
+    &__companyname {
+      margin-top: 7rem;
+    }
+    &__title {
+      font-size: 3rem;
+    }
+    &__description {
+      margin-top: 2rem;
+      text-align: start;
+      font-size: 1.1rem;
+    }
+    &__price {
+      margin-top: 2rem;
+      .descount {
+        font-size: 1.2rem;
+        transform: translateX(-5.5rem);
+      }
     }
   }
 }

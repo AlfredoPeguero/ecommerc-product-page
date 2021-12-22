@@ -1,31 +1,78 @@
 .hero {
   &__container {
     position: relative;
-    &__btn-previus {
-      img {
-        position: absolute;
-        padding: 0.7rem;
-        border-radius: 50%;
-        background: $White;
-      }
-      border: none;
-      background: transparent;
-      transform: translate(40%, 450%);
-    }
     &__btn-next {
+      position: absolute;
       img {
-        position: absolute;
         padding: 0.7rem;
         border-radius: 50%;
         background: $White;
       }
       border: none;
       background: transparent;
-      transform: translate(940%, -400%);
+      transform: translate(320px, 150px);
+    }
+    &__btn-previous {
+      position: absolute;
+      img {
+        padding: 0.7rem;
+        border-radius: 50%;
+        background: $White;
+      }
+      border: none;
+      background: transparent;
+      transform: translate(-360px, 150px);
     }
     &__slider {
       width: 100%;
-      height: 18.75rem;
+      // height: 18.75rem;
+    }
+    .thumbnail {
+      display: none;
+    }
+  }
+}
+@media (min-width: 75rem) {
+  .main__section {
+    display: flex;
+  }
+  .hero {
+    &__container {
+      position: relative;
+      &__btn-next {
+        display: none;
+      }
+      &__btn-previous {
+        display: none;
+      }
+      &__slider {
+        width: 80%;
+        margin-top: 4rem;
+        margin-left: 5rem;
+        border-radius: 10px;
+      }
+      .thumbnail {
+        margin-top: 1rem;
+        display: flex;
+        gap: 28px;
+        margin-left: 5rem;
+      }
+      .thumbnail img {
+        position: relative;
+        cursor: pointer;
+        width: 19%;
+        border-radius: 10px;
+      }
+      .thumbnail img::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: $Orange;
+        min-height: 30px;
+        width: 500px;
+        left: 0;
+        bottom: -2.5rem;
+      }
     }
   }
 }

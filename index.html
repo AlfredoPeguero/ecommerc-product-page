@@ -57,48 +57,82 @@
             <img src="./images/image-avatar.png" alt="avatar" />
           </div>
         </nav>
-        <hr />
-        <section class="hero">
-          <div class="hero__container">
-            <img
-              id="slider"
-              class="hero__container__slider"
-              src="./images/image-product-1.jpg"
-              alt=""
-            />
-          </div>
-        </section>
+        <hr class="line" />
 
-        <section class="details">
-          <div class="details__companyname">Sneaker Company</div>
-          <div class="details__title">Fall Limited Edition Sneakers</div>
-          <div class="details__description">
-            These low-profile sneakers are your perfect casual wear companion.
-            Featuring a durable rubber outer sole, they’ll withstand everything
-            the weather can offer.
-          </div>
-          <div class="details__price">
-            <span class="price">$125.00</span>
-            <span class="descount">50%</span>
-            <span class="original_price">$250.00</span>
-          </div>
-
-          <div class="addSection">
-            <div class="quantity">
-              <button class="minus">
-                <img src="./images/icon-minus.svg" alt="minus" />
+        <div class="main__section">
+          <section class="hero">
+            <div class="hero__container">
+              <button class="hero__container__btn-next">
+                <img src="./images/icon-next.svg" alt="next" />
               </button>
-              <div class="count">0</div>
-              <button class="plus">
-                <img src="./images/icon-plus.svg" alt="plus" />
+              <img
+                id="slider"
+                class="hero__container__slider"
+                src="./images/image-product-1.jpg"
+                alt=""
+              />
+              <button class="hero__container__btn-previous">
+                <img src="./images/icon-previous.svg" alt="next" />
+              </button>
+              <div class="thumbnail">
+                <img
+                  src="./images/image-product-1-thumbnail.jpg"
+                  alt="product"
+                />
+                <img
+                  src="./images/image-product-2-thumbnail.jpg"
+                  alt="product"
+                />
+                <img
+                  src="./images/image-product-3-thumbnail.jpg"
+                  alt="product"
+                />
+                <img
+                  src="./images/image-product-4-thumbnail.jpg"
+                  alt="product"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section class="details">
+            <div class="details__companyname">Sneaker Company</div>
+            <div class="details__title">Fall Limited Edition Sneakers</div>
+            <div class="details__description">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </div>
+            <div class="details__price">
+              <span class="price">$125.00</span>
+              <span class="descount">50%</span>
+              <span class="original_price">$250.00</span>
+            </div>
+
+            <div class="addSection">
+              <div class="quantity">
+                <button class="minus">
+                  <img src="./images/icon-minus.svg" alt="minus" />
+                </button>
+
+                <input
+                  type="number"
+                  value="0"
+                  class="count"
+                  name="items-quantity"
+                />
+
+                <button class="plus">
+                  <img src="./images/icon-plus.svg" alt="plus" />
+                </button>
+              </div>
+              <button class="btn_add">
+                <img src="./images/icon-whitecart.svg" alt="cart" />
+                Add to cart
               </button>
             </div>
-            <button class="btn_add">
-              <img src="./images/icon-whitecart.svg" alt="cart" />
-              Add to cart
-            </button>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     </main>
 

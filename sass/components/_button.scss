@@ -4,7 +4,7 @@
   padding: 0.8rem;
   width: 100%;
   margin: 1rem 0;
-  border-radius: 0.6rem;
+  border-radius: 0.5rem;
   color: $White;
   display: flex;
   justify-content: center;
@@ -15,4 +15,11 @@
 }
 .btn_add img {
   margin-right: 0.75rem;
+}
+@media (min-width: 75rem) {
+  .btn_add {
+    padding: 1.04rem;
+    width: 60%;
+    transform: translateX(-5.5rem);
+  }
 }
